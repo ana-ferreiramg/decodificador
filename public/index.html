@@ -6,5 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decodificador de texto</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1><img src="../src/img/alura.svg" alt="Logo Alura" /></h1>
+    </header>
+    <main>
+      <section class="decodificador">
+        <div class="decodificador_text">
+          <label for="user_text">Digite seu texto</label>
+          <textarea name="user_text" id="user_text" cols="10" rows="10" autofocus></textarea>
+          <button class="btn delete">Apagar</button>
+        </div>
+
+        <div class="decodificador_buttons">
+          <span><img src="../src/img/exclamation-circle.svg" alt="Sinal de exclamação." /> Apenas letras minúsculas e sem acento!</span>
+          <div>
+            <button class="btn encrypt">Criptografar</button>
+            <button class="btn decrypt">Descriptografar</button>
+          </div>
+        </div>
+      </section>
+      <section class="display">
+        <div class="display_searching">
+          <img src="../src/img/procurando.svg" alt="Procurando..." />
+          <div class="display_searching_text">
+            <h3>Nenhuma mensagem encontrada</h3>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+          </div>
+        </div>
+
+        <div class="display_result">
+          <textarea name="display_result_text" id="display_result_text" cols="10" rows="10"></textarea>
+          <div class="display_result_buttons">
+            <div class="alert_card">
+              <p></p>
+              <span class="alert_card_bar"></span>
+            </div>
+            <button class="btn copy">Copy</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
