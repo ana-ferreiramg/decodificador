@@ -18,6 +18,13 @@ function showMessage(text) {
   DOM.displayResultText.value = text;
 }
 
+function deleteText() {
+  DOM.userText.value = '';
+  DOM.displaySearching.classList.add('active');
+  DOM.displayResult.classList.remove('active');
+  DOM.userText.focus();
+}
+
 DOM.btnEncrypt.addEventListener('click', () => {
   if (DOM.userText.value.trim()) {
     let text = DOM.userText.value.toLowerCase();
@@ -28,15 +35,12 @@ DOM.btnEncrypt.addEventListener('click', () => {
 });
 
 DOM.btnDecrypt.addEventListener('click', () => {
-  if (DOM.displayResultText.value.trim()) {
-    let text = DOM.displayResultText.value.toLowerCase();
+  if (DOM.userText.value.trim()) {
+    let text = DOM.userText.value.toLowerCase();
     showMessage(decrypt(text));
   } else {
-    if (DOM.userText.value.trim()) {
-      let text = DOM.userText.value.toLowerCase();
-      showMessage(decrypt(text));
-    } else {
-      alert('TEXTAREA VAZIO!!');
-    }
+    alert('TEXTAREA VAZIO!!');
   }
 });
+
+DOM.btnDelete.addEventListener('click', () => deleteText());
