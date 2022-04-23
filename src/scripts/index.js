@@ -25,6 +25,18 @@ function deleteText() {
   DOM.userText.focus();
 }
 
+function copyToClipBoard() {
+  navigator.clipboard
+    .writeText(DOM.displayResultText.value)
+    .then(() => {
+      let text = DOM.displayResultText.value;
+      navigator.clipboard.writeText(text);
+    })
+    .catch((err) => {
+      console.log('Something went wrong', err);
+    });
+}
+
 DOM.btnEncrypt.addEventListener('click', () => {
   if (DOM.userText.value.trim()) {
     let text = DOM.userText.value.toLowerCase();
@@ -44,3 +56,5 @@ DOM.btnDecrypt.addEventListener('click', () => {
 });
 
 DOM.btnDelete.addEventListener('click', () => deleteText());
+
+DOM.btnCopy.addEventListener('click', () => copyToClipBoard());
