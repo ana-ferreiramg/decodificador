@@ -26,3 +26,8 @@
   background-color: var(--gray-100);
   color: var(--dark-blue-300);
 }
+
+.copy {
+  background-color: white;
+  color: var(--dark-blue-300);
+}
