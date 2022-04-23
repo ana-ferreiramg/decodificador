@@ -16,7 +16,7 @@
 - [Features](#features)
 - [Desafio extra](#extra)
 - [Template](#template)
-  <!--te-->
+    <!--te-->
 
     <h2 id="description">💻 Descrição do Projeto:</h2>
     <p>
@@ -46,7 +46,7 @@
   - A página deve ter campos para inserção do texto a ser criptografado ou descriptografado, e a pessoa usuária deve poder escolher entre as duas opções
     <br>
   - O resultado deve ser exibido na tela.
-    </p>
+      </p>
 
   <h2 id="extra">🎁 Extras</h2>
   <ul>
@@ -56,5 +56,5 @@
   <h2 id="template">🎨 Template</h2>
     <p> Template do projeto no 
       <a href="https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=16%3A802">Figma.</a>
-      #challengeonedecodificador2
     </p>
+    #challengeonedecodificador2
