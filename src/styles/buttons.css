@@ -1,0 +1,28 @@
+.btn {
+  font-size: 1.7rem;
+  padding: 12px;
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--dark-blue-300);
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+}
+
+.btn + .btn {
+  margin-top: 10px;
+}
+
+.delete {
+  background-color: #f6003c;
+  color: white;
+}
+
+.encrypt {
+  background-color: var(--dark-blue-300);
+  color: white;
+}
+
+.decrypt {
+  background-color: var(--gray-100);
+  color: var(--dark-blue-300);
+}
