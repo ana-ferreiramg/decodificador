@@ -1,5 +1,6 @@
 import encrypt from './encrypt.js';
 import decrypt from './decrypt.js';
+import alertMessage from './alert_message.js';
 
 const DOM = {
   userText: document.querySelector('#user_text'),
@@ -31,8 +32,10 @@ function copyToClipBoard() {
     .then(() => {
       let text = DOM.displayResultText.value;
       navigator.clipboard.writeText(text);
+      alertMessage(true);
     })
     .catch((err) => {
+      alertMessage(false);
       console.log('Something went wrong', err);
     });
 }

@@ -37,8 +37,13 @@ section.display {
 }
 
 section.display .display_searching {
+  display: none;
   color: var(--gray-500);
   text-align: center;
+}
+
+section.display .display_searching.active {
+  display: block;
 }
 
 section.display .display_searching img {
@@ -51,11 +56,16 @@ section.display .display_searching .display_searching_text {
 
 section.display .display_result {
   display: none;
-  padding: 20px 15px;
-  margin-top: 20px;
+  padding: 15px;
+}
+
+section.display .display_result.active {
+  display: block;
 }
 
 section.display .display_result textarea {
   background-color: white;
   box-shadow: none;
+  padding: 0;
+  cursor: none;
 }
