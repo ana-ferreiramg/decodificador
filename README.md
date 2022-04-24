@@ -57,4 +57,5 @@
     <p> Template do projeto no 
       <a href="https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=16%3A802">Figma.</a>
     </p>
+    <p>Deploy do projeto: <a href="https://ana-ferreiramg.github.io/decodificador/">Decodificador</a></p>
     #challengeonedecodificador2

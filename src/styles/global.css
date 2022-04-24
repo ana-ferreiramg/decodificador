@@ -43,6 +43,7 @@ body {
   font: 1.5rem 'Inter', sans-serif;
   width: 100vw;
   height: 100vh;
+  max-height: 820px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
