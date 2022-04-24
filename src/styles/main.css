@@ -8,7 +8,7 @@ main {
 }
 
 section + section {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 section.decodificador {
@@ -40,17 +40,26 @@ section.display .display_searching {
   display: none;
   color: var(--gray-500);
   text-align: center;
+  height: 100%;
 }
 
 section.display .display_searching.active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 section.display .display_searching img {
   display: none;
+  width: 100%;
 }
 
 section.display .display_searching .display_searching_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px 15px;
 }
 
@@ -68,4 +77,124 @@ section.display .display_result textarea {
   box-shadow: none;
   padding: 0;
   cursor: none;
+}
+
+section.display .display_result .display_result_buttons {
+  width: 100%;
+}
+
+/* BREAKPOINTS */
+@media only screen and (min-width: 600px) {
+  textarea {
+    height: 45vh;
+    margin-bottom: 0px;
+  }
+
+  section.decodificador .decodificador_text {
+    position: relative;
+  }
+
+  section.decodificador .decodificador_text .btn {
+    position: absolute;
+    width: 47%;
+    top: -20px;
+    right: 0;
+  }
+
+  section.decodificador .decodificador_buttons div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section.decodificador .decodificador_buttons div .btn + .btn {
+    margin-top: 0px;
+  }
+
+  section.decodificador .decodificador_buttons div .btn {
+    width: 47%;
+  }
+
+  section + section {
+    margin-top: 25px;
+  }
+
+  section.display .display_searching .display_searching_text {
+    padding: 30px 15px;
+  }
+
+  .display_result .alert_card {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .display_result .alert_card p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  main {
+    flex-direction: row;
+    max-width: 1200px;
+  }
+
+  textarea {
+    height: 45vh;
+    margin-bottom: 0px;
+  }
+
+  section + section {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+  section.decodificador {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  section.decodificador .decodificador_text {
+    position: static;
+    margin-top: 50px;
+  }
+
+  section.decodificador .decodificador_text .btn {
+    position: static;
+    float: right;
+    width: 47%;
+    margin-top: 10px;
+  }
+
+  section.decodificador .decodificador_buttons {
+    clear: both;
+    margin-bottom: 15px;
+  }
+
+  section.display {
+    height: 80vh;
+  }
+
+  section.display .display_searching img {
+    display: block;
+  }
+
+  section.display .display_result {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  section.display .display_result.active {
+    display: flex;
+  }
+
+  textarea#display_result_text {
+    height: 80%;
+  }
+
+  .display_result .alert_card {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }

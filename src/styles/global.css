@@ -57,8 +57,9 @@ header {
 
 footer {
   width: 100vw;
-  max-width: 1000px;
-  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 7px;
   background-color: var(--dark-blue-300);
   color: var(--light-blue-100);
 }
@@ -76,7 +77,7 @@ textarea {
   box-sizing: border-box;
 
   width: 100%;
-  min-height: 25vh;
+  min-height: 30vh;
   resize: none;
 
   font: 1.7rem 'Inter', sans-serif;
