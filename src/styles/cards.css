@@ -1,0 +1,39 @@
+.display_result .alert_card {
+  display: none;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+}
+
+.alert_card.active {
+  display: flex;
+}
+
+.display .alert_card.success {
+  background-color: #c6e7ce;
+  color: #009a31;
+}
+
+.display .alert_card.fail {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.alert_card_bar {
+  width: 100%;
+  background-color: red;
+  height: 3px;
+  animation: progressBar 3s;
+}
+
+@keyframes progressBar {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0%;
+  }
+}
